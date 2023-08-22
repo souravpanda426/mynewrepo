@@ -6,6 +6,8 @@ package Stepdefinitions;
 import org.junit.runner.RunWith;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
@@ -14,7 +16,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 
-
+@Listeners(utility.MyListeners.class)
 
 
 @RunWith(Cucumber.class)
@@ -26,7 +28,7 @@ import io.cucumber.junit.CucumberOptions;
 		//plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","html:target/extentreport"},
 		monochrome = true,
 		dryRun = false,
-		tags="@amazon"
+		tags="@swiggy"
 		
 		
 		
@@ -42,7 +44,13 @@ public class TestRunner {
 	
 	
 	
-}
+	
+	
+	}
+	
+	
+	
+
 	
 	
 	
