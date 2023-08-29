@@ -1,0 +1,22 @@
+{
+	"info": {
+		"_postman_id": "939e6bb4-beb8-455d-ae7a-cd7fa65c1eb8",
+		"name": "Simplilearn assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"_postman_id": "2df3f0e7-bbbe-4b2e-9ac5-3bd9452a744f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
