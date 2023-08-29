@@ -7,14 +7,37 @@
 	"item": [
 		{
 			"name": "New Request",
-			"_postman_id": "2df3f0e7-bbbe-4b2e-9ac5-3bd9452a744f",
+			"id": "2df3f0e7-bbbe-4b2e-9ac5-3bd9452a744f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22",
+					"protocol": "https",
+					"host": [
+						"samples",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "London,uk"
+						},
+						{
+							"key": "appid",
+							"value": "b6907d289e10d714a6e88b30761fae22"
+						}
+					]
+				}
 			},
 			"response": []
 		}
