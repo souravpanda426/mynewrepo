@@ -7,6 +7,20 @@
 	"item": [
 		{
 			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c9fd4d8f-d6b0-4e42-8843-4e14195aa3f7",
+						"exec": [
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "2df3f0e7-bbbe-4b2e-9ac5-3bd9452a744f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
