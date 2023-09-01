@@ -15,6 +15,11 @@
 						"exec": [
 							"pm.test(\"Status code is OK\", function () {",
 							"    pm.response.to.have.status(\"OK\");",
+							"});",
+							"",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.data[0].email).to.eql(\"michael.lawson@reqres.in\");",
 							"});"
 						],
 						"type": "text/javascript"
