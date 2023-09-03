@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "c9fd4d8f-d6b0-4e42-8843-4e14195aa3f7",
+						"id": "42cddda0-d506-49b3-8975-b62a60672d0d",
 						"exec": [
 							"pm.test(\"Status code is OK\", function () {",
 							"    pm.response.to.have.status(\"OK\");",
@@ -20,6 +20,9 @@
 							"pm.test(\"Your test name\", function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.data[0].email).to.eql(\"michael.lawson@reqres.in\");",
+							"});",
+							"pm.test(\"Content-Type is present\", function () {",
+							"    pm.response.to.have.header(\"Content-Type\");",
 							"});"
 						],
 						"type": "text/javascript"
