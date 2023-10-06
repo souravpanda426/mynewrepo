@@ -35,7 +35,23 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
 				"url": {
 					"raw": "https://reqres.in/api/users?page=2",
 					"protocol": "https",
@@ -90,7 +106,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://reqres.in/api/users?page=2",
+					"raw": "https://reqres.in/api/users",
 					"protocol": "https",
 					"host": [
 						"reqres",
@@ -103,7 +119,8 @@
 					"query": [
 						{
 							"key": "page",
-							"value": "2"
+							"value": "2",
+							"disabled": true
 						}
 					]
 				}
