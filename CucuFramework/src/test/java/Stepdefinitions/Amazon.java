@@ -35,7 +35,7 @@ public class Amazon {
 
 	@Given("select i phone")
 	public void select_i_phone() {
-	   WebDriverWait ww =  new WebDriverWait(driver,Duration.ofSeconds(10));
+	   WebDriverWait ww =  new WebDriverWait(driver,10);
 	   ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//img[@class='s-image']")));
 	   
 		
@@ -52,7 +52,7 @@ public class Amazon {
 	    JavascriptExecutor js = (JavascriptExecutor)driver;
 	    
 	    js.executeScript("window.scrollBy(0,600)");
-	    WebDriverWait ww =  new WebDriverWait(driver,Duration.ofSeconds(10));
+	    WebDriverWait ww =  new WebDriverWait(driver,(10));
 		ww.until(ExpectedConditions.presenceOfElementLocated(By.id("add-to-cart-button")));
 	    
 	    WebElement element = driver.findElement(By.id("add-to-cart-button"));
