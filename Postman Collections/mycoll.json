@@ -26,6 +26,12 @@
 				"removeRefererHeaderOnRedirect": true
 			},
 			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": {
+						"algorithm": "MD5"
+					}
+				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -66,18 +72,45 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {}
+				},
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "id",
+						"value": "2",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n            \"id\": 123,\n            \"email\": \"george.bluth@reqtyres.in\",\n            \"first_name\": \"GeorgeesAus\",\n            \"last_name\": \"Bluthoo6\",\n            \"avatar\": \"https://reqres.in/img/faces/1-image.jpg\"\n        }",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "https://reqres.in/api/users"
+				"url": {
+					"raw": "https://reqres.in/api/users?page=1",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -127,7 +160,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "DELETE",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -167,7 +200,6 @@
 	],
 	"variable": [
 		{
-			"id": "19494877-9607-4cdd-9e98-c1935a2fcc3e",
 			"key": "x",
 			"value": "1",
 			"type": "string"
