@@ -57,6 +57,10 @@ public class CommonMethods {
 		
 	}
 	
+	public static void main(String[] args) throws EncryptedDocumentException, IOException {
+		CommonMethods.getDataFromExcel(0, 0);
+	}
+	
 	
 
 }

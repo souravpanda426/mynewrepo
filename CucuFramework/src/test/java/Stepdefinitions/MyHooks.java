@@ -1,8 +1,8 @@
 package Stepdefinitions;
 
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.gherkin.model.Feature;
-import com.aventstack.extentreports.gherkin.model.Scenario;
+
+
+import java.util.ArrayList;
 
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -13,6 +13,10 @@ public class MyHooks {
 	@Before
 	
 	public void f() {
+		
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("hio");
+		
 		
 		System.out.println("before scenario");
 	}

@@ -6,8 +6,14 @@ import io.cucumber.java.Before;
 public class MyHooks {
 	
 	
-	@Before
+	@Before(order=0)
 	public void beforeScenario() {
+		
+		System.out.println("execution started");
+	}
+	
+	@Before
+	public void beforeScenarioAll() {
 		
 		System.out.println("execution started");
 	}

@@ -26,7 +26,7 @@ public class TestClass {
 		swiggy.clickOnLocation();
 
 		swiggy.setLocation("Bengaluru, Karnataka, India");
-		WebDriverWait ww =  new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait ww =  new WebDriverWait(driver,(10));
 		ww.until(ExpectedConditions.presenceOfElementLocated(swiggy.getOption()));
 
 		swiggy.clickOnOption();

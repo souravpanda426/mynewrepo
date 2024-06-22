@@ -44,7 +44,7 @@ public class Swiggy {
 		swiggy.clickOnLocation();
 
 		swiggy.setLocation("Bengaluru, Karnataka, India");
-		WebDriverWait ww =  new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait ww =  new WebDriverWait(driver, 10);
 		ww.until(ExpectedConditions.presenceOfElementLocated(swiggy.getOption()));
 
 		swiggy.clickOnOption();
@@ -63,7 +63,7 @@ public class Swiggy {
 		resturantsPage = new ResturantsPage(driver);
 
 
-		WebDriverWait ww =  new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait ww =  new WebDriverWait(driver,10);
 		System.out.println("adding panner to cart");
 		ww.until(ExpectedConditions.presenceOfElementLocated(resturantsPage.AddButton()));
 
@@ -77,7 +77,7 @@ public class Swiggy {
 		
 		resturantsPage = new ResturantsPage(driver);
 
-		WebDriverWait ww =  new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait ww =  new WebDriverWait(driver,10);
 		ww.until(ExpectedConditions.presenceOfElementLocated(resturantsPage.FirstImage()));
 
 
@@ -90,7 +90,7 @@ public class Swiggy {
 		
 		resturantsPage = new ResturantsPage(driver);
 
-		WebDriverWait ww =  new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait ww =  new WebDriverWait(driver,(10));
 		ww.until(ExpectedConditions.presenceOfElementLocated(resturantsPage.viewCart()));
 
 
@@ -104,7 +104,7 @@ public class Swiggy {
 	public boolean check_the_item_added() {
 		CheckoutPage checkout = new CheckoutPage(driver);
 
-		WebDriverWait ww =  new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait ww =  new WebDriverWait(driver,(10));
 		ww.until(ExpectedConditions.presenceOfElementLocated(checkout.Paneertikka()));
 
 

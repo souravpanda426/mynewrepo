@@ -9,11 +9,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-
-//import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+
+import org.junit.*;
+
+
+
+
+
+
 
 
 @Listeners(utility.MyListeners.class)
@@ -26,9 +31,9 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"Stepdefinitions"},
 		plugin = {"pretty","html:target/cucumber-html-report", "json:target/cucumber.json"},
 		//plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","html:target/extentreport"},
-		monochrome = true,
+		//monochrome = true,
 		dryRun = false,
-		tags="@swiggy"
+		tags="@amazon"
 		
 		
 		

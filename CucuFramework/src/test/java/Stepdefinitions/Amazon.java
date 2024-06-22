@@ -22,6 +22,7 @@ public class Amazon {
 	public void launch_amazon() {
 	    
 	driver = new FirefoxDriver();
+
 	driver.get("https://www.amazon.in/");
 	
 	
