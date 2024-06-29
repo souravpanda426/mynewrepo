@@ -11,12 +11,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b87914cb-8528-4df2-821d-07b5fb3ddee7",
+						"id": "85c6569f-7c08-49a3-b84e-4a492d7b2027",
 						"exec": [
-							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
 							""
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -26,6 +29,12 @@
 				"removeRefererHeaderOnRedirect": true
 			},
 			"request": {
+				"auth": {
+					"type": "digest",
+					"digest": {
+						"algorithm": "MD5"
+					}
+				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -66,18 +75,45 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {}
+				},
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "id",
+						"value": "2",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n            \"id\": 123,\n            \"email\": \"george.bluth@reqtyres.in\",\n            \"first_name\": \"GeorgeesAus\",\n            \"last_name\": \"Bluthoo6\",\n            \"avatar\": \"https://reqres.in/img/faces/1-image.jpg\"\n        }",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "https://reqres.in/api/users"
+				"url": {
+					"raw": "https://reqres.in/api/users?page=1",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -127,7 +163,7 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "DELETE",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -143,11 +179,20 @@
 			"response": []
 		}
 	],
+	"auth": {
+		"type": "oauth1",
+		"oauth1": {
+			"signatureMethod": "HMAC-SHA1",
+			"version": "1.0",
+			"addParamsToHeader": false,
+			"addEmptyParamsToSign": false
+		}
+	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "218d9ce7-51fb-4d02-b2b1-2420e4a7a552",
+				"id": "f5778621-3dfa-49b9-9612-0040f54eebe2",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -157,7 +202,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f543418f-92b8-4593-9f00-9dd80f892d38",
+				"id": "0ed34b1e-5547-4788-bf7d-e0ed7ee6284b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -167,7 +212,6 @@
 	],
 	"variable": [
 		{
-			"id": "19494877-9607-4cdd-9e98-c1935a2fcc3e",
 			"key": "x",
 			"value": "1",
 			"type": "string"
