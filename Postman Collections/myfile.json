@@ -17,15 +17,16 @@
 							"    pm.response.to.have.status(\"OK\");",
 							"});",
 							"",
-							"pm.test(\"Your test name\", function () {",
+							"pm.test(\"check name content\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.data[0].email).to.eql(\"michael.lawson@reqres.in\");",
+							"    pm.expect(jsonData.data[0].first_name).to.eql(\"andy\");",
 							"});",
 							"pm.test(\"Content-Type is present\", function () {",
 							"    pm.response.to.have.header(\"Content-Type\");",
 							"});"
 						],
-						"type": "text/javascript"
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
@@ -34,6 +35,10 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {}
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -75,55 +80,14 @@
 		},
 		{
 			"name": "New Request",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "9fa9a2d3-cb91-42c7-872a-119897a7bfab",
-						"exec": [
-							"pm.test(\"Status code is 201\", function () {",
-							"    pm.response.to.have.status(201);",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
 			"id": "0aba5eb0-b664-4148-952a-5c6dd0d6344c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "       {  \"id\": 73,\n            \"email\": \"andy.jones@reqres.in\",\n            \"first_name\": \"andy\",\n            \"last_name\": \"jomes\",\n            \"avatar\": \"https://reqres.in/img/faces/7-image909.jpg\"\n\n       }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://reqres.in/api/users",
-					"protocol": "https",
-					"host": [
-						"reqres",
-						"in"
-					],
-					"path": [
-						"api",
-						"users"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "2",
-							"disabled": true
-						}
-					]
-				}
+				"url": ""
 			},
 			"response": []
 		}
