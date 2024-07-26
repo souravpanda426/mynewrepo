@@ -89,7 +89,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\":{{email}}\n}",
+					"raw": "{\n    \"email\":\"{{email}}\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -202,7 +202,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "738329b4-620b-41cd-a0d4-c6ee37d10736",
+				"id": "a0428cee-5848-4e52-bfe2-925c59976a77",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -212,7 +212,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "564ea1a3-1935-4ba2-b1af-d2c60f168a13",
+				"id": "dd509981-c989-45a5-b28f-d97cc4a78080",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -223,6 +223,11 @@
 	"variable": [
 		{
 			"key": "email",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "URL",
 			"value": "1",
 			"type": "string"
 		}
