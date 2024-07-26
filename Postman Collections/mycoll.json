@@ -130,6 +130,14 @@
 							"    pm.response.to.have.status(200);",
 							"});"
 						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
 						"type": "text/javascript"
 					}
 				}
@@ -141,18 +149,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "{{url}}?page=2",
-					"host": [
-						"{{url}}"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "2"
-						}
-					]
-				}
+				"url": "{{url}}"
 			},
 			"response": []
 		},
@@ -192,7 +189,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "56b014b7-2d0b-467f-8cee-4f2ac98ec65b",
+				"id": "9b894d49-9cb4-47d8-a45b-d36c10f04352",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -202,7 +199,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "c19e8a4c-28c1-4e2e-a321-df1371c2482b",
+				"id": "0e33c08a-5216-49ed-8dd2-95b085679d5a",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -212,8 +209,8 @@
 	],
 	"variable": [
 		{
-			"key": "url",
-			"value": "0",
+			"key": "ur",
+			"value": "\"url\"",
 			"type": "string"
 		}
 	]
