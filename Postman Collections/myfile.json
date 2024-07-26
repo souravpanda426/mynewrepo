@@ -118,14 +118,15 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "parametriation",
 			"id": "b98e56dc-7949-43dd-a822-a5d8924e40ed",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": ""
 			},
 			"response": []
 		}
