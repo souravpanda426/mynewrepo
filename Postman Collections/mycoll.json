@@ -153,7 +153,16 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": ""
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{URL}}"
 			},
 			"response": []
 		},
