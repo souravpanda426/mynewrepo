@@ -130,5 +130,38 @@
 			},
 			"response": []
 		}
+	],
+	"auth": {
+		"type": "oauth1",
+		"oauth1": {
+			"signatureMethod": "HMAC-SHA1",
+			"version": "1.0",
+			"addParamsToHeader": false,
+			"addEmptyParamsToSign": false
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2a34bb2c-b865-43d1-872b-7c78b25dcafe",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "195bf5de-9d31-4175-bd9e-8500ea41cfba",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
 	]
 }
