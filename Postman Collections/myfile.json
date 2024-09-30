@@ -28,6 +28,13 @@
 						"type": "text/javascript",
 						"packages": {}
 					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"packages": {},
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "2df3f0e7-bbbe-4b2e-9ac5-3bd9452a744f",
@@ -36,8 +43,10 @@
 			},
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": {}
+					"type": "oauth2",
+					"oauth2": {
+						"addTokenTo": "header"
+					}
 				},
 				"method": "GET",
 				"header": [
