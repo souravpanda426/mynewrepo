@@ -11,15 +11,18 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "42cddda0-d506-49b3-8975-b62a60672d0d",
+						"id": "ef229f61-1fda-48e8-bd62-ff2ae8e8b1e7",
 						"exec": [
 							"pm.test(\"Status code is OK\", function () {",
 							"    pm.response.to.have.status(\"OK\");",
 							"});",
 							"",
+							"",
+							"",
+							"",
 							"pm.test(\"check name content\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    pm.expect(jsonData.data[0].first_name).to.eql(\"andy\");",
+							"    pm.expect(jsonData.data[0].first_name).to.eql(\"Michael\");",
 							"});",
 							"pm.test(\"Content-Type is present\", function () {",
 							"    pm.response.to.have.header(\"Content-Type\");",
@@ -32,8 +35,12 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"packages": {},
-						"type": "text/javascript"
+						"id": "68faacbc-7eed-446f-b8e1-a2ef995f1b39",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
