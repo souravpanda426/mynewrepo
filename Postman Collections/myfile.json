@@ -11,12 +11,12 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d45b43ed-ba72-4cac-805f-f45a9dcdb4b9",
+						"id": "609bf643-7ffa-4fc0-90cb-102a6d696510",
 						"exec": [
 							"pm.test(\"Status code is OK\", function () {",
 							"    pm.response.to.have.status(\"OK\");",
 							"});",
-							"",
+							";",
 							"",
 							"",
 							"",
@@ -36,7 +36,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "73c608d9-eed7-41b4-a2ce-c6c871285562",
+						"id": "0f0fface-4341-4464-a4d8-c9c329d9c623",
 						"exec": [
 							""
 						],
