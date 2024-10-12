@@ -11,11 +11,12 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "ef229f61-1fda-48e8-bd62-ff2ae8e8b1e7",
+						"id": "d45b43ed-ba72-4cac-805f-f45a9dcdb4b9",
 						"exec": [
 							"pm.test(\"Status code is OK\", function () {",
 							"    pm.response.to.have.status(\"OK\");",
 							"});",
+							"",
 							"",
 							"",
 							"",
@@ -35,7 +36,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "68faacbc-7eed-446f-b8e1-a2ef995f1b39",
+						"id": "73c608d9-eed7-41b4-a2ce-c6c871285562",
 						"exec": [
 							""
 						],
@@ -50,10 +51,8 @@
 			},
 			"request": {
 				"auth": {
-					"type": "oauth2",
-					"oauth2": {
-						"addTokenTo": "header"
-					}
+					"type": "basic",
+					"basic": {}
 				},
 				"method": "GET",
 				"header": [
