@@ -54,7 +54,7 @@
 					"type": "basic",
 					"basic": {}
 				},
-				"method": "GET",
+				"method": "OPTIONS",
 				"header": [
 					{
 						"key": "",
