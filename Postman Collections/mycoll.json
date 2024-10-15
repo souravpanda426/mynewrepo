@@ -76,8 +76,13 @@
 			},
 			"request": {
 				"auth": {
-					"type": "basic",
-					"basic": {}
+					"type": "oauth1",
+					"oauth1": {
+						"signatureMethod": "HMAC-SHA1",
+						"version": "1.0",
+						"addParamsToHeader": false,
+						"addEmptyParamsToSign": false
+					}
 				},
 				"method": "POST",
 				"header": [
