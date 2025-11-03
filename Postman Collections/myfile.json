@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "939e6bb4-beb8-455d-ae7a-cd7fa65c1eb8",
 		"name": "Simplilearn assignment",
-		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -161,9 +161,10 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2a34bb2c-b865-43d1-872b-7c78b25dcafe",
+				"id": "df2cff68-345e-4d01-b6b9-d151f89a25ba",
 				"type": "text/javascript",
 				"packages": {},
+				"requests": {},
 				"exec": [
 					""
 				]
@@ -172,13 +173,22 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "195bf5de-9d31-4175-bd9e-8500ea41cfba",
+				"id": "ff62cce9-fdf1-4e31-8146-96f8018393d7",
 				"type": "text/javascript",
 				"packages": {},
+				"requests": {},
 				"exec": [
 					""
 				]
 			}
+		}
+	],
+	"variable": [
+		{
+			"id": "409fa168-0cab-4027-8c3d-a89eff1e2183",
+			"key": "url",
+			"value": "",
+			"type": "default"
 		}
 	]
 }
