@@ -30,7 +30,8 @@
 							"});"
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
 					}
 				},
 				{
@@ -41,7 +42,8 @@
 							""
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -51,47 +53,22 @@
 			},
 			"request": {
 				"auth": {
-					"type": "digest",
-					"digest": {
-						"algorithm": "MD5"
-					}
+					"type": "basic",
+					"basic": {}
 				},
 				"method": "GET",
 				"header": [
 					{
-						"key": "",
-						"value": "",
-						"type": "text",
-						"disabled": true
+						"key": "Accept",
+						"value": "reqres-free-v1",
+						"type": "text"
 					}
 				],
 				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					"mode": "urlencoded",
+					"urlencoded": []
 				},
-				"url": {
-					"raw": "https://reqres.in/api/users?page=2",
-					"protocol": "https",
-					"host": [
-						"reqres",
-						"in"
-					],
-					"path": [
-						"api",
-						"users"
-					],
-					"query": [
-						{
-							"key": "page",
-							"value": "2"
-						}
-					]
-				}
+				"url": "{{url}}page=2"
 			},
 			"response": []
 		},
@@ -185,6 +162,7 @@
 	],
 	"variable": [
 		{
+			"id": "32729ad0-23ef-4a74-b070-b8b623650f6c",
 			"key": "url",
 			"value": ""
 		}
