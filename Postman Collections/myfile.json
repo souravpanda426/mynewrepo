@@ -11,13 +11,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d4c32481-7c79-4aa3-9421-397113f45df6",
+						"id": "7a2fb4a5-49c2-446b-a918-a990abeadac3",
 						"exec": [
 							"pm.test(\"Status code is OK\", function () {",
 							"    pm.response.to.have.status(\"OK\");",
 							"});",
 							";",
-							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});",
 							"",
 							"",
 							"",
@@ -37,7 +39,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "fb0b3b53-efb9-4144-ae01-af91e4508dcf",
+						"id": "78ca8a91-9bf1-49aa-84c9-2746d3655bc2",
 						"exec": [
 							""
 						],
@@ -68,7 +70,19 @@
 					"mode": "urlencoded",
 					"urlencoded": []
 				},
-				"url": "{{url}}page=2"
+				"url": {
+					"raw": "{{url}}?page=2",
+					"host": [
+						"{{url}}"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				}
 			},
 			"response": []
 		},
