@@ -89,7 +89,8 @@
 					{
 						"key": "id",
 						"value": "2",
-						"type": "text"
+						"type": "text",
+						"disabled": true
 					}
 				],
 				"body": {
